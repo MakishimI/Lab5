@@ -1,3 +1,4 @@
+// loadConfig.js
 const fs = require('fs/promises');
 
 async function loadConfig(filename) {
@@ -9,3 +10,5 @@ async function loadConfig(filename) {
         process.exit(1);
     }
 }
+
+module.exports = { loadConfig };
